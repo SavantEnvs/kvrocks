@@ -1,0 +1,1 @@
+select * from idx where v <-> [1, 1] < 2 and not n = 3 limit 1, 5

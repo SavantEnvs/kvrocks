@@ -1,0 +1,4 @@
+PING
+SET a 1
+INCR a
+GET a

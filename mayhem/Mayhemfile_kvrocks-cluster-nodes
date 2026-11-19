@@ -1,0 +1,9 @@
+project: savantenvs/kvrocks
+target: kvrocks-cluster-nodes
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/kvrocks-cluster-nodes/testsuite
+cmds:
+  - cmd: /mayhem/kvrocks_fuzz_cluster_nodes
+    libfuzzer: true
+    timeout: 30

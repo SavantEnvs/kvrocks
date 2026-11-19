@@ -1,0 +1,1 @@
+select n, t from idx where t hastag "a" and n <= 2.5

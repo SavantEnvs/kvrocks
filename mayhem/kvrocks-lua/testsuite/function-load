@@ -1,0 +1,2 @@
+#!lua name=lib
+redis.register_function('f', function(keys, args) redis.call('set', keys[1], args[1]) return redis.call('get', keys[1]) end)

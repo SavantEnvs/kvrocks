@@ -1,0 +1,8 @@
+# Used instead of upstream's root .dockerignore (which excludes tests/ and .github/): the commit
+# image carries the full repo, .git included; only local build output is left out.
+build/
+cmake-build-*/
+/kvrocks_fuzz_*
+**/__pycache__/
+*.swp
+.DS_Store

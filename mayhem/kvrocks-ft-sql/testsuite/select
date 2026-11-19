@@ -1,0 +1,1 @@
+select * from idx where n > 1 order by n desc limit 2

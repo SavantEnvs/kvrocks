@@ -1,0 +1,2 @@
+#!lua name=lib2
+redis.register_function{function_name='f', callback=function(keys, args) return {1, 2.5, 'x', {false}} end, flags={'no-writes'}}

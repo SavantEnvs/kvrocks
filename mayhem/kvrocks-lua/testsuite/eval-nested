@@ -1,0 +1,1 @@
+local t = {} local c = t for i=1,50 do c[1] = {} c = c[1] end return t

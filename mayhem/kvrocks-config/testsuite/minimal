@@ -1,0 +1,7 @@
+port 6666
+workers 4
+rename-command KEYS KEYS2
+namespace.ns1 token1
+rocksdb.compression zstd
+max-memory 0
+slowlog-log-slower-than 100

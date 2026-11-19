@@ -1,0 +1,1 @@
+local s = cjson.encode({a=1,b={1,2}}) local m = cmsgpack.pack(cjson.decode(s)) return {s, cmsgpack.unpack(m), struct.pack(">I2", 7), bit.band(12, 10), redis.sha1hex(s)}

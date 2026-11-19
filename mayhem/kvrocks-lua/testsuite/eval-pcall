@@ -1,0 +1,1 @@
+local r = redis.pcall("incr", KEYS[1]) redis.call("hset", KEYS[2], "f", ARGV[1]) return {r, redis.call("hgetall", KEYS[2]), redis.status_reply("OK"), redis.error_reply("E")}
